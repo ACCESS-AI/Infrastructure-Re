@@ -1,0 +1,55 @@
+:root {
+  --bs-font-sans-serif: 'DM Sans', sans-serif;
+  --bs-font-monospace: 'Courier Prime', monospace;
+  --bs-blue: #2aa1ff;
+  --bs-purple: #9576ff;
+  --bs-border-radius: 2.5rem;
+  --bs-btn-focus-box-shadow: #d7d9e2 0px 1px 2px 0px;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background: linear-gradient(180deg,#f8f7f8,#f5f3f7);
+}
+
+.logo {
+  padding: 12px 24px;
+  font-size: 36px;
+  height: 48px;
+}
+
+.form-control {
+  border-radius: var(--bs-border-radius);
+}
+
+.form-control:focus {
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
+
+.input-group-text {
+  border-radius: var(--bs-border-radius);
+  padding-left: 1rem;
+}
+
+.btn-primary, .btn-light {
+  --bs-btn-focus-box-shadow: var(--bs-btn-focus-box-shadow);
+}
+
+.btn-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-border-radius: var(--bs-border-radius);
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bs-purple);
+  --bs-btn-hover-bg: #8147ff;
+  --bs-btn-active-bg: var(--bs-btn-hover-bg);
+}
+
+.btn-light {
+  --bs-btn-color: #6d748f;
+  --bs-btn-border-color: var(--bs-gray-200);
+  border-width: medium;
+}
